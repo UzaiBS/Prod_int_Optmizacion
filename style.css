@@ -1,0 +1,355 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(209, 216, 221);
+}
+
+header {
+  height: 100px;
+  background: rgb(209, 216, 221);
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo,
+.logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4883ad;
+  font-weight: 200;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.menu a,
+.accesos a {
+  color: #23577c;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu,
+.mostrar-accesos,
+.esconder-accesos {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover,
+.accesos a:hover,
+.mostrar-accesos:hover,
+.esconder-accesos:hover {
+  color: #48ad81;
+}
+
+#check,
+#check-2 {
+  display: none;
+}
+
+/*BUSCAR*/
+#busca {
+  position: relative;
+  margin: 0 20px 0 20px;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  display: grid;
+  place-items: center;
+  bottom: 20px;
+}
+
+.seccion-input {
+  height: 2rem;
+  width: 40%;
+  border-radius: 15px;
+  border: 0;
+  text-align: center;
+}
+
+.img-search {
+  position: absolute;
+  width: 25px;
+  bottom: 0.2rem;
+}
+
+.seccion-input::placeholder {
+  padding-left: 6rem;
+}
+
+/*BANNER*/
+#banner-1 {
+  padding: 0 25px;
+  background-image: url(media/Natación.jpg);
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+}
+
+#banner-2 {
+  padding: 0 25px;
+  background-image: url(media/regalo.jpg);
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+}
+
+#banner-3 {
+  padding: 0 25px;
+  background-image: url(media/oficina.jpg);
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+}
+
+.contenido-banner-1 a,
+.contenido-banner-1 h3,
+.contenido-banner-2 a,
+.contenido-banner-2 h3,
+.contenido-banner-3 a,
+.contenido-banner-3 h3 {
+  font-size: 40px;
+  font-weight: 400;
+  padding: 30px 10px;
+  color: white;
+  text-decoration: none;
+}
+#banner-1,
+#banner-2,
+a:hover {
+  color: #48ad81;
+  transition: 0.4s;
+}
+
+/*ACCESIBILIDAD*/
+#accesibilidad {
+  height: fit-content;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/*CONTACTOS*/
+#contactos {
+  height: 70px;
+  width: 60%;
+}
+
+#contactos h4 {
+  position: relative;
+  left: 20px;
+}
+
+#iconos {
+  padding: 10px 0px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#iconos a:hover {
+  filter: invert(61%) sepia(11%) saturate(1767%) hue-rotate(102deg)
+    brightness(95%) contrast(88%);
+}
+
+/*PIE*/
+#pie {
+  /* position: relative; */
+  padding: 60px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pie a {
+  text-decoration: none;
+  color: black;
+}
+
+#pie a:hover {
+  color: #48ad81;
+}
+
+/*MOBILIARIO
+CARRUSEL*/
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;
+}
+
+.elemento {
+  flex: 0 1 1;
+  margin: 0 20px 10px;
+  background-color: #ffffff;
+  height: fit-content;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.elemento a {
+  text-decoration: none;
+  color: black;
+}
+
+.elemento:hover {
+  background: #4883ad;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+/*CUADROS*/
+#letrero-h3 {
+  padding-left: 20px;
+}
+
+#cuerpo,
+#cuerpo-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 10px 20px 20px;
+}
+
+.cuadros,
+.cuadros-2 {
+  background-color: white;
+  flex-basis: 100px;
+  flex-grow: 1;
+  margin: 10px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;
+    justify-content: center; */
+  align-items: center;
+}
+
+.cuadros img {
+  padding-top: 5px;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.cuadros-2 img {
+  padding: 5px 10px;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  align-self: center;
+}
+
+#cuerpo h5 {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.cuadros h5 span {
+  font-weight: 200;
+}
+
+.cuadros a {
+  text-decoration: none;
+  margin-left: 80px;
+  /* margin-right: 200px; */
+
+  font-size: 20px;
+  color: black;
+  width: fit-content;
+}
+
+.cuadros a:hover {
+  color: #48ad81;
+  transition: 0.4s;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  /*HEADER*/
+  .mostrar-menu,
+  .esconder-menu,
+  .mostrar-accesos,
+  .esconder-accesos {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(209, 216, 221);
+    left: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+
+  .accesos {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(209, 216, 221);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+
+  .menu a,
+  .accesos a {
+    display: block;
+    padding: 20px;
+  }
+
+  .esconder-menu,
+  .esconder-accesos {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #check:checked ~ .menu {
+    left: 0;
+  }
+
+  #check-2:checked ~ .accesos {
+    right: 0;
+  }
+
+  /*BUSCAR*/
+  .seccion-input {
+    width: 100%;
+  }
+
+  /*BANNER*/
+  .contenido-banner-1 a,
+  .contenido-banner-2 a,
+  .contenido-banner-3 a {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
